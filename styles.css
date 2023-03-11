@@ -5,9 +5,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Inter';
 }
+
 :root {
   --calc-linear-20px-40px: calc(
     20px + (40 - 20) * (100vw - 320px) / (1536 - 320)
@@ -23,10 +25,12 @@ body {
   );
   --calc-linear-padding: calc(20px + (65 - 20) * (100vw - 320px) / (768 - 320));
 }
+
 .visually-hidden {
   position: fixed;
   transform: scale(0);
 }
+
 .presentation {
   display: grid;
   grid-template-columns: 50fr 30fr 20fr;
@@ -38,9 +42,11 @@ body {
     'Image5 RedArea RedArea'
     'Image5 Image7 Image7';
 }
+
 .presentation__main {
   grid-area: Title;
 }
+
 .main {
   display: flex;
   flex-direction: column;
@@ -49,9 +55,11 @@ body {
   background-color: #f9f9f9;
   padding: var(--calc-linear-20px-40px);
 }
+
 .main__title {
   font-size: var(--calc-linear-20px-60px-768ep);
 }
+
 .title {
   font-style: normal;
   font-weight: 600;
@@ -59,29 +67,36 @@ body {
   text-transform: uppercase;
   text-align: left;
 }
+
 .main__iconsContainer {
   width: 100%;
 }
+
 .iconsContainer {
   display: flex;
   justify-content: space-evenly;
 }
+
 .iconsContainer__img {
   width: var(--calc-linear-20px-40px);
   height: var(--calc-linear-20px-40px);
   object-fit: cover;
 }
+
 .presentation__image9 {
   grid-area: Image9;
 }
+
 .presentation__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 .presentation__text {
   grid-area: Text;
 }
+
 .text {
   font-style: normal;
   font-weight: 300;
@@ -94,31 +109,40 @@ body {
   background: #828282;
   overflow: hidden;
 }
+
 .presentation__image2 {
   grid-area: Image2;
 }
+
 .presentation__brownArea {
   grid-area: BrownArea;
 }
+
 .brownArea {
   background: #a6806b;
 }
+
 .presentation__image4 {
   grid-area: Image4;
 }
+
 .presentation__image8 {
   grid-area: Image8;
 }
+
 .presentation__image5 {
   grid-area: Image5;
 }
+
 .presentation__redArea {
   grid-area: RedArea;
   min-height: 100px;
 }
+
 .redArea {
   background: #a61c1c;
 }
+
 .presentation__image7 {
   grid-area: Image7;
 }
@@ -133,9 +157,11 @@ body {
       'Title Image9 Image9 Image5 RedArea'
       'Text Image2 BrownArea Image5 Image7';
   }
+
   .main__title {
     font-size: var(--calc-linear-30px-60px);
   }
+
   .main {
     padding: 0 var(--calc-linear-padding);
   }
